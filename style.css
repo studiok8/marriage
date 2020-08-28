@@ -1,0 +1,316 @@
+* {margin: 0; padding: 0;}
+
+a {text-decoration: none;}
+h1{
+    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    font-weight:bold; 
+    position: absolute;
+    top:220px;
+    left:315px;
+    font-size:3em;
+    text-align:center;
+    line-height:0.95em;
+    font-weight:bold;
+    color: #fffff0;
+    text-shadow: 
+        0 0.05em 0.08em rgba(243, 216, 158, 0.7);
+}
+h2{
+    margin-top:1em;
+}
+.fadeInDown {
+     -webkit-animation-fill-mode:both;
+     -ms-animation-fill-mode:both;
+     animation-fill-mode:both;
+     -webkit-animation-duration:3s;
+     -ms-animation-duration:3s;
+     animation-duration:3s;
+     -webkit-animation-name: fadeInDown;
+     animation-name: fadeInDown;
+     visibility: visible !important;
+    }
+    @-webkit-keyframes fadeInDown {
+     0% { opacity: 0; -webkit-transform: translateY(-20px); }
+     100% { opacity: 1; -webkit-transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+     0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+     100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+    }
+.fixed {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    z-index: 1;
+}
+body {
+    color: #fff;
+    font-family: 'open-sans-bold', AvenirNext-Medium, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    margin-bottom: -16px;
+}
+@media screen and (max-width: 524px){
+    nav{
+        width: 100%;
+    }
+}
+.effect-fade {
+    opacity : 0;
+    transform : translate(0, 45px);
+    transition : all 1000ms;
+    }
+    
+.effect-fade.effect-scroll {
+    opacity : 1;
+    transform : translate(0, 0);
+    }
+nav li {
+    display: inline-block;
+    padding: 24px 10px;
+    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    font-weight:bold; 
+}
+nav li a {
+    color: #100238;
+    text-transform: uppercase;
+}
+section {
+    height: 100vh;
+}
+#screen1 {
+    background-image:url(wedding-1999093_1920.jpg);
+    background-size: cover;
+}
+#screen2 {
+    background-image:url(wedding-4348910_1920.jpg);
+    background-size: cover;
+}
+
+@media only screen and (max-width: 520px) {
+    nav li {
+        padding: 24px 4px;
+    }
+    nav li a {
+        font-size: 14px;
+    }
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    margin-top: 35px;
+    background-image: url(wedding-1844575_1280.jpg);
+}
+.grovalNav {
+    flex: 1;
+    overflow: hidden;
+    background-color: rgba(10, 1, 49, 0.349);
+}
+#imgEff {
+	transition-duration: 0.3s;
+}
+#imgEff:hover {
+	transform: scale(1.2);
+}
+#imgEff:before {
+	content: "eeeeeeeeeeeee!!!";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition-duration: 0.3s;
+	opacity: 0; 
+	background: radial-gradient(rgba(0, 0, 0, 0.6), #000000); 
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+	color: #fff;
+	font-size: 22px;
+	text-shadow: 0 0 2px #000;
+}
+#imgEff:hover:before {
+	opacity: 1;
+}
+.content #imgEff:hover:before {
+	transform: scale(1.5);
+}
+#imgEff1 {
+	transition-duration: 0.3s;
+}
+#imgEff1:hover {
+	transform: scale(1.2);
+}
+#imgEff1:before {
+	content: "rrrrrrrrrr!!!";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition-duration: 0.3s;
+	opacity: 0;
+	background: radial-gradient(rgba(0, 0, 0, 0.6), #000000); 
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 22px;
+	text-shadow: 0 0 2px #000;
+}
+#imgEff1:hover:before {
+	opacity: 1;
+}
+.content #imgEff1:hover:before {
+	transform: scale(1.5);
+}
+#imgEff2 {
+	transition-duration: 0.3s;
+}
+#imgEff2:hover {
+	transform: scale(1.2);
+}
+#imgEff2:before {
+	content: "pppppppppp!!!";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition-duration: 0.3s;
+	opacity: 0;
+	background: radial-gradient(rgba(0, 0, 0, 0.6), #000000);
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	color: #fff;
+	font-size: 22px;
+	text-shadow: 0 0 2px #000;
+}
+#imgEff2:hover:before {
+	opacity: 1; 
+}
+.content #imgEff2:hover:before {
+	transform: scale(1.5);
+}
+.localNav{
+    flex: 1;
+    text-align: center;
+    background-color: rgb(192, 161, 75, 0.349);
+    color: #fff;
+}
+.content{
+    flex: 1;
+    text-align: center;
+    background-color: rgb(105, 0, 0, 0.349);
+}
+.menu{
+    margin: 35px 0 10px 0;
+    display: flex;
+}
+.menu p{
+    margin-top: 13px;
+    font-weight: bold;
+    color:rgb(32, 31, 37);
+}
+.menu dt{
+    padding-bottom: 5px;
+    margin: 18px 0 5px 0;
+    border-bottom: 3px dashed;
+    font-weight: bold;
+    color: rgb(129, 122, 122);
+}
+.menu dd{
+    font-weight: bold;
+    color:rgb(59, 56, 63);
+}
+.menu dd:last-child{
+    margin-bottom: 0;
+}
+.image{
+    width: 35%;
+    height: 50px;
+    background-color: rgb(104, 99, 99);
+    text-align: center;
+    margin: 15px;
+}
+.parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.1em;
+    margin:10em 1em 1em 1em;
+  }
+.img-bg-01 {
+    background-image: url('marriage-3565968_1920.jpg');
+  }
+.faq{
+    padding: 1em;
+    margin-top: 35px;
+}
+.faq dt{
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 2px dotted;
+    font-weight: bold;
+    color: rgb(170, 170, 170);
+}
+.faq dt:before{
+    content: "Q";
+    font-weight: normal;
+    background: #e4ebeea1;
+    color: rgb(6, 4, 19);
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.6;
+    text-align: center;
+    display: inline-block;
+    margin-right: .5em;
+}
+.faq dd{
+    margin-bottom: 2em;
+    font-weight: bold;
+}
+.faq dd:last-child{
+    margin-bottom: 0;
+}
+#page_top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #201f24;
+    opacity: 0.8;
+    border-radius: 50%;
+}
+#page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    
+}
+#page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #d8f19e;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -5px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+div#page_top {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}

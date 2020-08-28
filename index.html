@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>〇〇〇〇〇結婚相談</title>
+</head>
+<body>
+    <section id="screen1" id="animation">
+        <h1>〇〇〇〇〇国際結婚相談所</h1>
+        <nav>
+             <ul>
+                  <li><a href="#">初めての方へ</a></li>
+                  <li><a href="#">サービス</a></li>
+                  <li><a href="#">コース・料金プラン</a></li>
+                  <li><a href="#">サポートシステム</a></li>
+                  <li><a href="#">Q＆A</a></li>
+                  <li><a href="#">お問い合わせ</a></li>
+             </ul>
+        </nav>
+    </section>
+    <section id="screen2" class="animation"></section>
+    <main>
+        <div class="grovalNav" id="imgEff">
+            <h2 class="animation">はじめての方へ</h2>
+        </div>
+        <div class="content" id="imgEff1">
+            <h2 class="animation">サービス</h2>
+        </div>
+        <div class="localNav" id="imgEff2">
+            <h2 class="animation">安心のサポートシステム</h2>
+
+        </div>
+    </main>
+    <side>
+        <div class="menu">
+            <div class="image">
+                <p>シンプルコース</p> 
+                <dt>こんな方におすすめ</dt>
+                <dd>oooooooooo</dd>
+                <dd>oooooooooo</dd>
+            </div>
+            <div class="image">
+                <p>コンシェルジュコース</p>    
+                <dt>こんな方におすすめ</dt>
+                <dd>oooooooooo</dd>
+                <dd>oooooooooo</dd>         
+            </div>
+            <div class="image">
+                <p>プレミアムコース</p>
+                <dt>こんな方におすすめ</dt>
+                <dd>oooooooooo</dd>
+                <dd>oooooooooo</dd>
+            </div>
+        </div>
+    <div class="parallax-bg img-bg-01">
+        <dl class="faq">
+            <dt>質問QQQQQQQQQQQQQQQQQQQQQQ</dt>
+            <dd>回答AAAAAAAAAAAAAAAAAAAAAA</dd>
+            <dt>質問QQQQQQQQQQQQQQQQQQQQQQ</dt>
+            <dd>回答AAAAAAAAAAAAAAAAAAAAAA</dd>
+            <dt>質問QQQQQQQQQQQQQQQQQQQQQQ</dt>
+            <dd>回答AAAAAAAAAAAAAAAAAAAAAA</dd>
+            <dt>質問QQQQQQQQQQQQQQQQQQQQQQ</dt>
+            <dd>回答AAAAAAAAAAAAAAAAAAAAAA</dd>
+        </dl>
+    </div>
+    <side>
+        <div id="page_top"><a href="#"></a></div>
+    <script>
+       $(window).bind('scroll', function() {
+       var navHeight = $( window ).height() - 70;
+             if ($(window).scrollTop() > navHeight) {
+                 $('nav').addClass('fixed');
+             }
+             else {
+                 $('nav').removeClass('fixed');
+             }
+        });
+        $('.animation').css('visibility','hidden');
+        $(window).scroll(function(){    
+            var windowHeight = $(window).height(),
+            topWindow = $(window).scrollTop();
+        $('.animation').each(function(){
+            var targetPosition = $(this).offset().top;
+        if(topWindow > targetPosition - windowHeight + 200){
+        $(this).addClass("fadeInDown");
+        }
+        });
+        });
+    </script>
+</body>
+</html>
